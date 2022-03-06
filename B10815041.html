@@ -1,0 +1,37 @@
+<h1>CS3053701 網頁安全 Web Security HW</h1>
+<button id="button-1"> NAME </button>
+<span id="spanStudentID">B10815041</span>
+<p></p>
+<image src="https://scontent-tpe1-1.xx.fbcdn.net/v/t39.30808-6/236718816_3120573684896245_593819235514360959_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=j4WQWJN_dUcAX942jag&_nc_ht=scontent-tpe1-1.xx&oh=00_AT-kxaeHUEkNiJuY8BXf5Z_C5gRYudXQlq-iC83FxIJEbA&oe=6229BC1F"  width="200" height="200">
+<script>
+ 
+ var oc = 0;
+ document.getElementById("button-1").onclick = function(){
+    //alert("click button");
+	//window.confirm("sometext");
+	/*while(1) {
+		var r=confirm("既然來了就點個讚吧");
+		if (r==true)
+		{
+			window.open("https://www.facebook.com/%E5%8F%B0%E7%A7%91%E7%AD%91%E8%BB%92%E5%9C%8B%E6%A8%82%E7%A4%BE-NTUST-CMC-1608714369415525");
+			break;
+		}
+	}*/
+	var r=confirm("既然來了就點個讚吧");
+	if (r==true)
+	{
+		window.open("https://www.facebook.com/%E5%8F%B0%E7%A7%91%E7%AD%91%E8%BB%92%E5%9C%8B%E6%A8%82%E7%A4%BE-NTUST-CMC-1608714369415525");
+	}
+	else {
+		alert("本來想用While寫的，但我怕被當掉.");
+	}
+	if(oc == 0){
+		document.getElementById("spanStudentID").textContent="B10815041 張晨興";
+		oc = 1;
+	}
+	else {
+		document.getElementById("spanStudentID").textContent="B10815041";
+		oc = 0
+	}
+   };  
+</script>
